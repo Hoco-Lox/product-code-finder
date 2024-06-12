@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Code Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Code Finder</h1>
+        <div class="form-container">
+            <input type="text" id="product-name" placeholder="Enter product name">
+            <button onclick="findProductCode()">Find Code</button>
+        </div>
+        <div id="result"></div>
+        <div class="form-container">
+            <input type="text" id="new-product-name" placeholder="Enter new product name">
+            <input type="text" id="new-product-code" placeholder="Enter new product code">
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+        <div class="form-container">
+            <button onclick="viewAllProducts()">View All Products</button>
+        </div>
+        <div id="product-list"></div>
+        <div class="form-container">
+            <input type="text" id="delete-product-name" placeholder="Enter product name to delete">
+            <button onclick="deleteProduct()">Delete Product</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
